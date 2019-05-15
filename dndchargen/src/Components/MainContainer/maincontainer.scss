@@ -1,7 +1,25 @@
+@import "./../../colors.scss";
 
+.borderwrap {
+  position: relative;
+  background: linear-gradient(to right, $red, $orange, $yellow, $green, $blue);
+  padding: 3px;
+}
 
-a {
-  color: red;
+#boop {
+  margin: 40px 10px;
+  padding: 20px;
+  border: 1px solid $red;
+  background: $dark;
+}
+
+.eachTab {
+  padding: 20px;
+  border: 1px solid $red;
+}
+
+.eachTab a {
+  color: white;
 }
 
 //bootstrap overrides:

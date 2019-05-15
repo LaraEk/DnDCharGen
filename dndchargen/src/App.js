@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Container fluid={true}>
+        <Container fluid={false} className="overallContainer">
           <Row>
             <Col xs={12} sm={9}>
               <MainContainer />

@@ -5,20 +5,29 @@ import "./maincontainer.scss";
 class MainContainer extends React.Component {
   render() {
     return (
-      <div>
+      <div className="borderwrap">
         <Tab.Container
           transition={false}
-          id="left-tabs-example"
+          id="generatortabs"
           defaultActiveKey="first"
         >
-          <Row>
+          <Row id="boop">
             <Col sm={3}>
               <Nav variant="tabs" className="flex-column">
-                <Nav.Item>
+                <Nav.Item className="eachTab">
                   <Nav.Link eventKey="first">Tab 1</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                <Nav.Item className="eachTab">
                   <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="eachTab">
+                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="eachTab">
+                  <Nav.Link eventKey="fourth">Tab 4</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="eachTab">
+                  <Nav.Link eventKey="fifth">Tab 5</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
@@ -29,6 +38,15 @@ class MainContainer extends React.Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>test tab pane 2</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <p>test tab pane 3</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fourth">
+                  <p>test tab pane 4</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fifth">
+                  <p>test tab pane 5</p>
                 </Tab.Pane>
               </Tab.Content>
             </Col>
