@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Row, Col, Tab, Nav } from "react-bootstrap";
 import "./maincontainer.scss";
 
@@ -6,10 +6,14 @@ class MainContainer extends React.Component {
   render() {
     return (
       <div>
-        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Tab.Container
+          transition={false}
+          id="left-tabs-example"
+          defaultActiveKey="first"
+        >
           <Row>
             <Col sm={3}>
-              <Nav variant="pills" className="flex-column">
+              <Nav variant="tabs" className="flex-column">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab 1</Nav.Link>
                 </Nav.Item>
@@ -20,8 +24,12 @@ class MainContainer extends React.Component {
             </Col>
             <Col sm={9}>
               <Tab.Content>
-                <Tab.Pane eventKey="first">belg</Tab.Pane>
-                <Tab.Pane eventKey="second">blhe</Tab.Pane>
+                <Tab.Pane eventKey="first">
+                  <p>test tab pane 1</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <p>test tab pane 2</p>
+                </Tab.Pane>
               </Tab.Content>
             </Col>
           </Row>
