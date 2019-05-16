@@ -13,13 +13,53 @@
   background: $dark;
 }
 
+#justhiscol {
+  background: $light;
+  height: 500px;
+  border-top: $red solid 1px;
+}
+
+//tabs CSS
 .eachTab {
   padding: 20px;
   border: 1px solid $red;
+  border-top: $red solid 1px;
+  border-bottom: $red solid 1px;
+  border-right: none;
+  background: $light;
 }
 
 .eachTab a {
-  color: white;
+  color: $red;
+  font-size: 1.8em;
+}
+
+#tabone {
+  border-radius: 15px 0px 0px 15px;
+  border-left: $red solid 8px;
+}
+
+#tabtwo {
+  border-radius: 15px 0px 0px 15px;
+  border-left: $orange solid 8px;
+}
+
+#tabthree {
+  border-radius: 15px 0px 0px 15px;
+  border-left: $yellow solid 8px;
+}
+
+#tabfour {
+  border-radius: 15px 0px 0px 15px;
+  border-left: $green solid 8px;
+}
+
+#tabfive {
+  border-radius: 15px 0px 0px 15px;
+  border-left: $blue solid 8px;
 }
 
 //bootstrap overrides:
+.col-sm-3 {
+  padding: 0px;
+}
